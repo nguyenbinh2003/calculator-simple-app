@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.iconscout.com/icon/free/png-512/free-calculator-1859951-1575939.png?f=webp&w=256"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      class="relative max-w-[300px] w-full rounded-e-xl pt-2.5 px-5 pb-5 bg-white shadow-lg shadow-indigo-400/50"
+    >
+      <input
+        id="inputText"
+        type="text"
+        class="h-20 w-full text-right outline-none border-none text-2xl mb-2.5 text-[#000e1a]"
+      />
+
+      <div class="grid gap-[10px] grid-cols-4 grid-rows-4">
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="AC"
+        >
+          AC
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="DEL"
+        >
+          DEL
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="%"
+        >
+          %
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="/"
+        >
+          /
+        </button>
+
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="7"
+        >
+          7
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="8"
+        >
+          8
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="9"
+        >
+          9
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="*"
+        >
+          *
+        </button>
+
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="4"
+        >
+          4
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="5"
+        >
+          5
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="6"
+        >
+          6
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99] text-[#2f9fff]"
+          data-value="-"
+        >
+          -
+        </button>
+
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="1"
+        >
+          1
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] active:scale-[0.99]"
+          data-value="2"
+        >
+          2
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee]"
+          data-value="3"
+        >
+          3
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] text-[#2f9fff]"
+          data-value="+"
+        >
+          +
+        </button>
+
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee]"
+          data-value="0"
+        >
+          0
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee]"
+          data-value="00"
+        >
+          00
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee]"
+          data-value="."
+        >
+          .
+        </button>
+        <button
+          class="p-[10px] rounded-[6px] border-none text-[20px] cursor-pointer bg-[#eee] text-[#2f9fff]"
+          data-value="="
+        >
+          =
+        </button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
